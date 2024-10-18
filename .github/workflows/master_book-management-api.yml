@@ -62,6 +62,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'book-management-api'
-          slot-name: 'stagning'
+          slot-name: 'staging'
           package: ${{env.DOTNET_ROOT}}/myapp
           
