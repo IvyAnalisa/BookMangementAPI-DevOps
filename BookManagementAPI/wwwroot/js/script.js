@@ -30,7 +30,9 @@ function fetchBooks() {
 }
 
 // Add book event
-document.getElementById('addBook').addEventListener('click', () => {
+document.getElementById('addBook').addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent form from submitting in the traditional way
+
     const title = document.getElementById('title').value;
     const author = document.getElementById('author').value;
     const description = document.getElementById('description').value;

@@ -13,9 +13,18 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
         }
-
+        h1{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:30px;
+        color: blue;
+         }
+         h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:30px;
+        color: red;
+         }
         table {
-            width: 100%;
+            width: 70%;
             border-collapse: collapse;
         }
 
@@ -28,23 +37,78 @@
             background-color: #4CAF50;
             color: white;
         }
+
+        div {
+            border-radius: 5px;
+            background-color: pink;
+            padding: 20px;
+            width: 50%
+        }
+
+        input[type=text] {
+            width: 50%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=date] {
+            width: 50%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button {
+               background-color: #04AA6D; /* Green */
+               border: none;
+               color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+                }
+            
+            
     </style>
 </head>
 <body>
     <h1>Book Management</h1>
 
-    <h2>Add a Book</h2>
-    <label>Title: <input type="text" id="title"></label>
+    
+    <div >
+        <h2>Add a Book</h2>
+        <form>
+    <label>Title:  </label>
     <br>
-    <label>Author: <input type="text" id="author"></label>
+     <input type="text" id="title">
     <br>
-    <label>Description: <input type="text" id="description"></label>
+    <label>Author: </label>
     <br>
-    <label>Published Date: <input type="date" id="publishedDate"></label>
+    <input type="text" id="author">
+    <br>
+    <label>Description: </label>
+    <br>
+    <input type="text" id="description">
+    <br>
+    <label>Published Date: </label>
+    <br>
+     <input type="date" id="publishedDate" />
     <br>
     <button id="addBook">Add Book</button>
+        </form>
+    </div>
+    
 
     <h2>Book List</h2>
+    <br>
     <table>
         <thead>
             <tr>
@@ -60,21 +124,43 @@
             <!-- Book rows will be added dynamically here -->
         </tbody>
     </table>
+    <br>
 
     <!-- Update book section -->
-    <h2>Update Book</h2>
-    <label>ID: <input type="text" id="updateId" ></label>
-    <br>
-    <label>Title: <input type="text" id="updateTitle"></label>
-    <br>
-    <label>Author: <input type="text" id="updateAuthor"></label>
-    <br>
-    <label>Description: <input type="text" id="updateDescription"></label>
-    <br>
-    <label>Published Date: <input type="date" id="updatePublishedDate"></label>
-    <br>
-    <button id="updateBook">Update Book</button>
+    
+    <div>
+        <form>
+        <h2>Update Book</h2>
+        
 
+    <label>ID: </label>
+    <br>
+    <input type="text" id="updateId" >
+    <br>
+    <label>Title: </label>
+    <br>
+    <input type="text" id="updateTitle">
+    <br>
+
+    <label>Author: </label>
+    <br>
+    <input type="text" id="updateAuthor">
+    <br>
+    
+    <label>Description: </label>
+    <br>
+    <input type="text" id="updateDescription">
+    <br>
+    
+    <label>Published Date: </label>
+    <br>
+    <input type="date" id="updatePublishedDate">
+    <br>
+    
+
+    <button id="updateBook">Update Book</button>
+    </form>
+    </div>
     <!-- JavaScript logic for handling API requests -->
     <script src="js/script.js"></script>
 </body>
