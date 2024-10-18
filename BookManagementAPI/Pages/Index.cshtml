@@ -1,0 +1,82 @@
+﻿@page
+@model BookManagementAPI.Pages.IndexModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Management</h1>
+
+    <h2>Add a Book</h2>
+    <label>Title: <input type="text" id="title"></label>
+    <br>
+    <label>Author: <input type="text" id="author"></label>
+    <br>
+    <label>Description: <input type="text" id="description"></label>
+    <br>
+    <label>Published Date: <input type="date" id="publishedDate"></label>
+    <br>
+    <button id="addBook">Add Book</button>
+
+    <h2>Book List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Published Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="bookList">
+            <!-- Book rows will be added dynamically here -->
+        </tbody>
+    </table>
+
+    <!-- Update book section -->
+    <h2>Update Book</h2>
+    <label>ID: <input type="text" id="updateId" ></label>
+    <br>
+    <label>Title: <input type="text" id="updateTitle"></label>
+    <br>
+    <label>Author: <input type="text" id="updateAuthor"></label>
+    <br>
+    <label>Description: <input type="text" id="updateDescription"></label>
+    <br>
+    <label>Published Date: <input type="date" id="updatePublishedDate"></label>
+    <br>
+    <button id="updateBook">Update Book</button>
+
+    <!-- JavaScript logic for handling API requests -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+

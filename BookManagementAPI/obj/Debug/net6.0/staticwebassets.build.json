@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "JqvSEvMe795kEvb7i5AE4DxRFgZnZz0wTOWTMIVFMZw=",
+  "Source": "BookManagementAPI",
+  "BasePath": "_content/BookManagementAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BookManagementAPI\\wwwroot",
+      "Source": "BookManagementAPI",
+      "ContentRoot": "C:\\Users\\ivyan\\Documents\\DevOpsKYH\\BookMangementAPI-Devops\\BookManagementAPI\\wwwroot\\",
+      "BasePath": "_content/BookManagementAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\ivyan\\Documents\\DevOpsKYH\\BookMangementAPI-Devops\\BookManagementAPI\\wwwroot\\css\\style.css",
+      "SourceId": "BookManagementAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ivyan\\Documents\\DevOpsKYH\\BookMangementAPI-Devops\\BookManagementAPI\\wwwroot\\",
+      "BasePath": "_content/BookManagementAPI",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\ivyan\\Documents\\DevOpsKYH\\BookMangementAPI-Devops\\BookManagementAPI\\wwwroot\\js\\script.js",
+      "SourceId": "BookManagementAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ivyan\\Documents\\DevOpsKYH\\BookMangementAPI-Devops\\BookManagementAPI\\wwwroot\\",
+      "BasePath": "_content/BookManagementAPI",
+      "RelativePath": "js/script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\script.js"
+    }
+  ]
+}
