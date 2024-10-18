@@ -63,5 +63,5 @@ jobs:
         with:
           app-name: 'book-management-api' 
           slot-name: 'Production'
-          package: ${{env.DOTNET_ROOT}}/myapp
+          package: './myapp' 
           
