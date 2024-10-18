@@ -22,10 +22,12 @@ jobs:
           dotnet-version: '6.0.x'
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build --configuration Release --output ${{env.DOTNET_ROOT}}/myapp
+        working-directory: ./BookManagementAPI
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        working-directory: ./BookManagementAPI
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
