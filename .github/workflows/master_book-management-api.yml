@@ -61,6 +61,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'book-management-api'    
+          app-name: 'book-management-api' 
+          slot-name: 'Production'
           package: ${{env.DOTNET_ROOT}}/myapp
           
